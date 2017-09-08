@@ -1,11 +1,16 @@
 \contentsline {chapter}{Abstract}{iii}
-\contentsline {chapter}{Acknowledgments}{v}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Basics}{1}
-\contentsline {section}{\numberline {1.2}Math \& Citations}{1}
-\contentsline {section}{\numberline {1.3}Figures \& Tables}{1}
-\contentsline {chapter}{\numberline {2}Conclusions}{3}
-\contentsline {section}{\numberline {2.1}Stuff}{3}
+\contentsline {chapter}{\numberline {2}Background}{3}
+\contentsline {section}{\numberline {2.1}Per Bak and Sand in Brains}{3}
+\contentsline {section}{\numberline {2.2}Self Organised Criticality}{3}
+\contentsline {section}{\numberline {2.3}The Experiment}{4}
+\contentsline {section}{\numberline {2.4}Previous Simulation}{4}
+\contentsline {section}{\numberline {2.5}Unified Particle Physics and Position Based Dynamics}{4}
+\contentsline {section}{\numberline {2.6}Math \& Citations}{4}
+\contentsline {section}{\numberline {2.7}Figures \& Tables}{4}
+\contentsline {chapter}{\numberline {3}Conclusions}{7}
+\contentsline {section}{\numberline {3.1}Stuff}{7}
 \contentsline {chapter}{Appendices}{}
-\contentsline {chapter}{\numberline {A}Extra Stuff}{5}
-\contentsline {chapter}{\numberline {B}Extra Stuffing}{7}
+\contentsline {chapter}{\numberline {A}Extra Stuff}{9}
+\contentsline {chapter}{\numberline {B}Extra Stuffing}{11}
+\contentsline {chapter}{Bibliography}{13}
