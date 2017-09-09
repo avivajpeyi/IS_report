@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  8 SEP 2017 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 SEP 2017 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,17 +260,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [3] [4
 
 ]
-(./Thesis.toc)
+(./Thesis.toc [5])
 \tf@toc=\write3
 \openout3 = `Thesis.toc'.
 
- [5] [6
-
-] (./Thesis.lot)
+ [6] (./Thesis.lot)
 \tf@lot=\write4
 \openout4 = `Thesis.lot'.
 
- [7] [8
+ [7
+
+] [8
 
 ] (./Thesis.lof)
 \tf@lof=\write5
@@ -282,45 +282,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Chapter 1.
 [1
 
-] [2
-
 ]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [2]
 Chapter 2.
+[3
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<Figures/ExampleFigure.pdf, id=51, 599.23875pt x 279.0425pt>
-File: Figures/ExampleFigure.pdf Graphic file (type pdf)
-
-<use Figures/ExampleFigure.pdf>
-Package pdftex.def Info: Figures/ExampleFigure.pdf used on input line 139.
-(pdftex.def)             Requested size: 276.00105pt x 128.5229pt.
- [4 <./Figures/ExampleFigure.pdf>] [5] [6
+] [4
 
 ]
 Chapter 3.
-[7] [8
+[5] [6
+
+]
+Chapter 4.
+<Figures/ExampleFigure.pdf, id=61, 599.23875pt x 279.0425pt>
+File: Figures/ExampleFigure.pdf Graphic file (type pdf)
+
+<use Figures/ExampleFigure.pdf>
+Package pdftex.def Info: Figures/ExampleFigure.pdf used on input line 169.
+(pdftex.def)             Requested size: 276.00105pt x 128.5229pt.
+ [7] [8 <./Figures/ExampleFigure.pdf>]
+Chapter 5.
+[9
+
+] [10
 
 ]
 Appendix A.
-[9] [10
+[11] [12
 
 ]
 Appendix B.
-[11] [12
+[13] [14
 
-] (./Thesis.bbl) [13
+] (./Thesis.bbl) [15
 
 ] (./Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 2670 strings out of 492995
- 35719 string characters out of 6132704
- 96353 words of memory out of 5000000
- 6170 multiletter control sequences out of 15000+600000
- 9275 words of font info for 35 fonts, out of 8000000 for 9000
+ 2671 strings out of 492995
+ 35734 string characters out of 6132704
+ 98354 words of memory out of 5000000
+ 6171 multiletter control sequences out of 15000+600000
+ 9582 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,26p,1030b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,26p,1247b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
@@ -335,10 +346,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
 b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 
-Output written on Thesis.pdf (23 pages, 194633 bytes).
+Output written on Thesis.pdf (25 pages, 204036 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

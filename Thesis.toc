@@ -1,16 +1,36 @@
 \contentsline {chapter}{Abstract}{iii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Background}{3}
-\contentsline {section}{\numberline {2.1}Per Bak and Sand in Brains}{3}
-\contentsline {section}{\numberline {2.2}Self Organised Criticality}{3}
-\contentsline {section}{\numberline {2.3}The Experiment}{4}
-\contentsline {section}{\numberline {2.4}Previous Simulation}{4}
-\contentsline {section}{\numberline {2.5}Unified Particle Physics and Position Based Dynamics}{4}
-\contentsline {section}{\numberline {2.6}Math \& Citations}{4}
-\contentsline {section}{\numberline {2.7}Figures \& Tables}{4}
-\contentsline {chapter}{\numberline {3}Conclusions}{7}
-\contentsline {section}{\numberline {3.1}Stuff}{7}
+\contentsline {section}{\numberline {1.1}Per Bak and Sand in Brains}{1}
+\contentsline {section}{\numberline {1.2}The Origins of SOC: Tipping Points}{1}
+\contentsline {section}{\numberline {1.3}The Experiment}{2}
+\contentsline {section}{\numberline {1.4}Simulation}{2}
+\contentsline {subsection}{\numberline {1.4.1}Previous Work}{2}
+\contentsline {subsection}{\numberline {1.4.2}Speed Boosts with GPUs}{2}
+\contentsline {subsection}{\numberline {1.4.3}Unified Particle Physics and Position Based Dynamics}{2}
+\contentsline {section}{\numberline {1.5}Overview of Thesis}{2}
+\contentsline {chapter}{\numberline {2}Theory}{3}
+\contentsline {section}{\numberline {2.1}Physics of the Experimental System}{3}
+\contentsline {subsection}{\numberline {2.1.1}SOC and the power Law}{3}
+\contentsline {subsubsection}{Effect of Drop Height}{3}
+\contentsline {subsubsection}{Effect of Cohesion}{3}
+\contentsline {subsection}{\numberline {2.1.2}Angle of Repose}{3}
+\contentsline {subsection}{\numberline {2.1.3}Cohesion between Beads}{3}
+\contentsline {section}{\numberline {2.2}How to take Advantage of GPUs}{3}
+\contentsline {subsection}{\numberline {2.2.1}GPUs traditional role in Computers}{3}
+\contentsline {subsection}{\numberline {2.2.2}Parallelising Code and Threading}{3}
+\contentsline {section}{\numberline {2.3}Algorithms Used}{3}
+\contentsline {subsection}{\numberline {2.3.1}Boundary Volume Hierarchy}{3}
+\contentsline {subsection}{\numberline {2.3.2}Position-Based Dynamics}{3}
+\contentsline {subsection}{\numberline {2.3.3}Unified-Particle Solving}{3}
+\contentsline {chapter}{\numberline {3}Results}{5}
+\contentsline {section}{\numberline {3.1}Comparing Simulation to Experiment}{5}
+\contentsline {section}{\numberline {3.2}Novel Results}{5}
+\contentsline {chapter}{\numberline {4}}{7}
+\contentsline {section}{\numberline {4.1}Math \& Citations}{7}
+\contentsline {section}{\numberline {4.2}Figures \& Tables}{7}
+\contentsline {chapter}{\numberline {5}Conclusions}{9}
+\contentsline {section}{\numberline {5.1}Stuff}{9}
 \contentsline {chapter}{Appendices}{}
-\contentsline {chapter}{\numberline {A}Extra Stuff}{9}
-\contentsline {chapter}{\numberline {B}Extra Stuffing}{11}
-\contentsline {chapter}{Bibliography}{13}
+\contentsline {chapter}{\numberline {A}Extra Stuff}{11}
+\contentsline {chapter}{\numberline {B}Extra Stuffing}{13}
+\contentsline {chapter}{Bibliography}{15}
