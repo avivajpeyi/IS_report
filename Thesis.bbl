@@ -1,4 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{IMGSandPile}
+John~C Mutter and Charles~HChenciner Langmuir.
+\newblock Introduction to {E}arth {S}ciences.
+\newblock \url{http://www.columbia.edu/itc/ldeo/mutter/jcm/Intro/Intro.html},
+  2015.
+\newblock [Online; accessed 2017-September-11].
+
+\bibitem{IMGCriticalPoint}
+Critical {P}oint {D}rying: uses of supercritical fluids.
+\newblock \url{http://www.appliedseparations.com/critical-point-drying.html},
+  2017.
+\newblock [Online; accessed 2017-September-11].
 
 \bibitem{Chenciner2000}
 Alain Chenciner and Richard Montgomery.
@@ -6,17 +19,42 @@ Alain Chenciner and Richard Montgomery.
   of equal masses.
 \newblock {\em Annals of Mathematics}, 152:881--901, 2000.
 
-\bibitem{Gleick1987}
-James Gleick.
-\newblock {\em Chaos: Making a New Science}.
-\newblock Penguin Books, New York, New York, 1988.
+\bibitem{riceExpt}
+Vidar Frette, Kim Christensen, Anders Malthe-Sorenssen, Jens Feder, et~al.
+\newblock Avalanche dynamics in a pile of rice.
+\newblock {\em Nature}, 379(6560):49, 1996.
 
-\bibitem{Lindner2015}
-John~F. Lindner.
-\newblock The {M}artian.
-\newblock
-  \url{http://woosterphysicists.scotblogs.wooster.edu/2015/10/15/the-martian/},
-  2015.
-\newblock [Online; accessed 2015-December-8].
+\bibitem{FlexNVIDIA}
+Miles Macklin, Matthias M{\"u}ller, Nuttapong Chentanez, and Tae-Yong Kim.
+\newblock Unified particle physics for real-time applications.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 33(4):153, 2014.
+
+\bibitem{posBasedDynamics}
+Matthias M{\"u}ller, Bruno Heidelberger, Marcus Hennix, and John Ratcliff.
+\newblock Position based dynamics.
+\newblock {\em Journal of Visual Communication and Image Representation},
+  18(2):109--118, 2007.
+
+\bibitem{BeadpileCohesion}
+Susan~Y Lehman, Elizabeth Baker, Howard~A Henry, Andrew~J Kindschuh, Larry~C
+  Markley, Megan~B Browning, Mary~E Mills, R~Michael Winters, and DT~Jacobs.
+\newblock Avalanches on a conical bead pile: scaling with tuning parameters.
+\newblock {\em Granular Matter}, pages 1--9, 2012.
+
+\bibitem{BeadpileSOC}
+Rachel~M Costello, KL~Cruz, Christie Egnatuk, DT~Jacobs, Matthew~C Krivos,
+  Tim~Sir Louis, Rebecca~J Urban, and Hanna Wagner.
+\newblock Self-organized criticality in a bead pile.
+\newblock {\em Physical Review E}, 67(4):041304, 2003.
+
+\bibitem{OGperBak1987}
+TC~Per~Bak and Kurt Wiesenfeld.
+\newblock Self-organized criticality: and explanation of 1/f noise.
+\newblock {\em Phys. Rev. Let}, 59:381--384, 1987.
+
+\bibitem{howNatureWorks}
+Per Bak.
+\newblock {\em How nature works: the science of self-organized criticality}.
+\newblock Springer Science \& Business Media, 2013.
 
 \end{thebibliography}

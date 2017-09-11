@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  9 SEP 2017 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  10 SEP 2017 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,76 +280,129 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapter 1.
+<Figures/Intro/SandPileFigs/sand_pile_model.png, id=42, 1228.59pt x 794.97pt>
+File: Figures/Intro/SandPileFigs/sand_pile_model.png Graphic file (type png)
+
+<use Figures/Intro/SandPileFigs/sand_pile_model.png>
+Package pdftex.def Info: Figures/Intro/SandPileFigs/sand_pile_model.png used on
+ input line 102.
+(pdftex.def)             Requested size: 276.00105pt x 178.58153pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
 ]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [2]
-Chapter 2.
-[3
+<Figures/Intro/SandPileFigs/critical_co2.jpg, id=48, 435.6275pt x 388.45125pt>
+File: Figures/Intro/SandPileFigs/critical_co2.jpg Graphic file (type jpg)
 
-] [4
+<use Figures/Intro/SandPileFigs/critical_co2.jpg>
+Package pdftex.def Info: Figures/Intro/SandPileFigs/critical_co2.jpg used on in
+put line 115.
+(pdftex.def)             Requested size: 276.00105pt x 246.10663pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 123.
+
+
+<Figures/Intro/SandPileFigs/perBak_cellular.png, id=49, 556.0775pt x 530.98375p
+t>
+File: Figures/Intro/SandPileFigs/perBak_cellular.png Graphic file (type png)
+ <use Figures/Intro/SandPileFigs/perBak_cellular.png>
+Package pdftex.def Info: Figures/Intro/SandPileFigs/perBak_cellular.png used on
+ input line 126.
+(pdftex.def)             Requested size: 276.00105pt x 263.54669pt.
+ [2 <./Figures/Intro/SandPileFigs/sand_pile_model.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./Figures/Intro/SandPileFigs/critical_co2.jpg>] [4 <./Figures/Intro/SandPil
+eFigs/perBak_cellular.png>] [5] [6
+
+]
+Chapter 2.
+[7] [8
 
 ]
 Chapter 3.
-[5] [6
+[9] [10
 
 ]
 Chapter 4.
-<Figures/ExampleFigure.pdf, id=61, 599.23875pt x 279.0425pt>
+
+LaTeX Warning: Citation `Gleick1987' on page 11 undefined on input line 198.
+
+
+LaTeX Warning: Citation `Lindner2015' on page 11 undefined on input line 198.
+
+<Figures/ExampleFigure.pdf, id=81, 599.23875pt x 279.0425pt>
 File: Figures/ExampleFigure.pdf Graphic file (type pdf)
 
 <use Figures/ExampleFigure.pdf>
-Package pdftex.def Info: Figures/ExampleFigure.pdf used on input line 169.
+Package pdftex.def Info: Figures/ExampleFigure.pdf used on input line 206.
 (pdftex.def)             Requested size: 276.00105pt x 128.5229pt.
- [7] [8 <./Figures/ExampleFigure.pdf>]
+ [11] [12 <./Figures/ExampleFigure.pdf>]
 Chapter 5.
-[9
+[13
 
-] [10
+] [14
 
 ]
 Appendix A.
-[11] [12
+[15] [16
 
 ]
 Appendix B.
-[13] [14
+[17] [18
 
-] (./Thesis.bbl) [15
+] (./Thesis.bbl
+Underfull \hbox (badness 1997) in paragraph at lines 4--9
+[]\OT1/cmr/m/n/10 John C Mut-ter and Charles HChenciner Lang-muir.  In-tro-duc-
+tion
+ []
 
-] (./Thesis.aux) ) 
+
+Underfull \hbox (badness 2088) in paragraph at lines 11--15
+[]\OT1/cmr/m/n/10 Critical Point Dry-ing: uses of su-per-crit-i-cal flu-ids.  $
+\OT1/cmtt/m/n/10 http : / / www .
+ []
+
+) [19
+
+] (./Thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2671 strings out of 492995
- 35734 string characters out of 6132704
- 98354 words of memory out of 5000000
- 6171 multiletter control sequences out of 15000+600000
+ 2702 strings out of 492995
+ 36613 string characters out of 6132704
+ 99411 words of memory out of 5000000
+ 6197 multiletter control sequences out of 15000+600000
  9582 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,26p,1247b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-
-Output written on Thesis.pdf (25 pages, 204036 bytes).
+ 42i,8n,26p,1030b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Thesis.pdf (29 pages, 756662 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 166 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

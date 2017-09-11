@@ -94,17 +94,52 @@
 \chapter{Introduction}\label{introduction}
 %discussion of everything in shallow... 
 \section{Per Bak and Sand in Brains}
-In 1999 a Danish Scientist by the name Per Bak explained the disordered electrical neural activity of a brain in an audacious way that left many neurologists puzzled.  He suggested that the brain's neural activity worked in a similar procedure as a sand pile which incur avalanches of varying sizes to maintain stability (instabilities paradoxically helping provide the system with stability). As more sand is added to the pile, more avalanches occur along the surface of the conical shape. Even with these unpredictable surface avalanches, the conical shape of the pile is maintained. Per Bak pointed out that although the individual avalanches were unpredictable in timing and size, the \textit{distribution} of the timings and sizes of several avalanches \textit{demonstrate a regularity}. He termed this phenomena of finding order in systems which appeared to be unpredictable with a term he created - ``self-organised criticality'' (SOC).  He explained to the neurologists that perhaps brains, like sand piles, behave as a self organised critical system. This is because the ordered complexity in a brain which permits the ability to think arises spontaneously from the disordered electrical activity of neurons .
+\subsection{Background}
+In 1999 a Danish Scientist by the name Per Bak explained the disordered electrical neural activity of a brain in an audacious way that left many neurologists puzzled.  He suggested that the brain's neural activity worked in a similar procedure as a sand pile which incur avalanches of varying sizes to maintain stability (instabilities paradoxically helping provide the system with stability). As more sand is added to the pile, more avalanches occur along the surface of the conical shape. Some of the avalanches are large and cause the sand to slip off the pile while some smaller ones lead to the sand grains sliding down a small distance before coming to a stop, as seen in Figure~\ref{fig:sandPileModel}. 
+
+	\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/sand_pile_model.png}
+	\caption[Per Bak's Theoretical Sand Pile Model]{\textit{Per Bak's Theoretical Sand Pile Model:} Sand is dropped regularly on a flat surface. The sand piles up in a conical shape and eventually reaches a critical point. At the critical point, the addition of even a single grain can lead to an avalanche. This image was modified from one seen in \cite{IMGSandPile}.}
+	\label{fig:sandPileModel}
+\end{figure*}
+
+Even with these unpredictable avalanches, the conical shape of the pile is maintained. Per Bak pointed out that although the individual avalanches were unpredictable in timing and size, the \textit{distribution} of the timings and sizes of several avalanches \textit{demonstrate a regularity}. He termed this phenomena of finding order in systems which appeared to be unpredictable with a term he coined - ``self-organised criticality'' (SOC).  He explained to the neurologists that perhaps brains, like sand piles, behave as self organised critical systems. This is because the ordered complexity in a brain which permits the ability to think arises spontaneously from what appears to us as disordered electrical activity of neurons .
 
 
-\section{The Origins of SOC: Tipping Points}
-In the 1980s, Bak began studying phase transitions in the hopes of better understanding how it is possible to find order in nature which is constituted by a disordered assortment of particles. Phase transitions, the process in which matter transforms from one phase to another, can involve a sudden change, like the magnetization of ferro-magnets, or can involve a gradual change, like ice transitioning to water. In any transition, there is a precise moment called the tipping or critical point at which the matter is halfway between each phase. In the case for most phase transitions, there are certain criteria that need to be met before matter can transition to another phase. For example -- the local temperate and pressure must be within a specific range for ice to transition into water. Studying these transitions which are dependent on the surrounds to occur lead Bak to question transitions which were able to occur spontaneously. He observed that in spontaneously phase transitioning systems, interactions of local elements of the system could spontaneously bring the system to a critical point -- a self oraganised critical point. 
-In 1987 Per Bak and a group of his colleagues published the first paper on SOC and soon afterward, Bak even published a book titled \textit{`How Nature Works'}. In the book, Bak extends the concept of SOC and demonstrates its presence in other complex systems ranging from financial markets,  coastline formation, evolution, earthquakes, galaxy distributions and even the brain. According to Bak, these systems hover between the fence separating order from disorder. Bak was able to study these only with simulations and so other scientists were still skeptical of his hypotheses about SOC.
+\subsection{The Origins of SOC: Critical Points}
+In the 1980s, Bak began studying phase transitions in the hopes of better understanding how it is possible to find order in nature which is constituted by a disordered assortment of particles. Phase transitions, the process in which matter transforms from one phase to another, can involve a sudden change, like the magnetization of ferro-magnets, or can involve a gradual change, like ice transitioning to water. In any transition, there is a precise moment called the tipping or critical point at which the matter is halfway between each phase (see Figure~\ref{fig:critPoint} to look at a phase diagram of carbon dioxide with it's critical point marked).
 
-However, in 1992, the physics department of the University of Oslo was able to experimentally test Bak's sand pile model.
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/critical_co2}
+	\caption[CO$^2$ phase diagram]{\textit{CO$^2$ phase diagram:} the critical point for CO$^2$ to transition from liquid/gas/super-fluid is marked on the plot. This image was taken from \cite{IMGCriticalPoint}. }
+	\label{fig:critPoint}
+\end{figure*}
 
-One of the first empirical tests of Bak’s sand pile model took place in 1992, in the physics department of the University of Oslo. The physicists confined piles of rice between glass plates and added grains one at a time, capturing the resulting avalanche dynamics on camera. They found that the piles of elongated grains of rice behaved much like Bak’s simplified model.
-Most notably, the smaller avalanches were more frequent than the larger ones, following the expected power law distribution. That is, if there were 100 small avalanches involving only 10 grains during a given time frame, there would be 10 avalanches involving 100 grains in the same period, but only a single large avalanche involving 1,000 grains. (The same pattern had been observed in
+
+ In the case for most phase transitions, there are certain criteria that need to be met before matter can transition to another phase. For example - the local temperate and pressure must be within a specific range for ice to transition into water. Studying these transitions which can be reached only with the tuning of a parameter, lead Bak to question transitions which were able to occur spontaneously (transitions that occur with no fine tuning of parameters). He observed that in spontaneously transitioning systems, interactions of local elements of the system could spontaneously bring the system to a critical point -- a self oraganised critical point. He demonstrated the existence of SOC behavior with a simulation of a sandpile which he and his colleagues implemented using a cellular automata. 
+\subsection{The Sandpile Cellular Automata}
+In the simulation, as sand is added to the pile, the local slopes on the pile increase (where the slopes are the cellular variables that evolve the cellular automata). If the slope is steep enough to overcome the the static friction holding the grains to the sides of the conical pile, grains slide down to neighboring positions. If the slope at the neighboring positions are also greater than the force required to hold the grain,  the grain can continue to slide down the side down the pile. Eventually, the avalanche of sliding grains comes to a halt when the grains settle in positions where they can remain. Figure~\ref{} shows a state of the sandpile produced from the group's cellular automata. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/perBak_cellular}
+	\caption[Snapshot of the sandpile cellular automata]{\textit{Snapshot of the sandpile cellular automata:} this snapshot was generated from a cellular automata of dimensions 100 by 100. The dark regions represent clusters that have been affected by the dropping of a single grain of sand at a point.  This image was taken from \cite{IMGCriticalPoint}. }
+	\label{fig:perBak_cellular}
+\end{figure*}
+Per Bak and his colleagues published the paper on the sand pile simulation and SOC in 1987. Soon afterward, Bak even published a book titled \textit{`How Nature Works'}. In the book, Bak extends the concept of SOC and demonstrates its presence in other complex systems ranging from financial markets,  coastline formation, evolution, earthquakes, galaxy distributions and even the brain. According to Bak, these systems hover between the fence separating order from disorder. Bak was able to study these only with simulations and so other scientists were still skeptical of his hypotheses about SOC. Some considered his work to be too simplistic to be able to capture the intricacies of realistic systems. 
+\subsection{Experimental Verification}
+A little afterwards, in 1992, the physics department of the University of Oslo was able to experimentally test Bak's sand pile model. 
+
+elf-organized criticality was originally coined by Bak and coworkers in 1987 as an explanation for how many slowly driven dissipative systems evolve into a critical state with no intrinsic length or time scale. The generic example is a naive, theoretical sand pile model. As grains of sand are added to a pile, the pile builds up, increasing the local slopes within the pile. If a local slopes exceeds a threshold value that depends on the maximum shear force a grain can sustain before sliding, the grain slides down to a neighboring position. The slope at that position may also exceed the critical value, and the avalanche continues until no more grains are moved. The distribution of energy dissipation events in this simple model is power-law distributed for a two-dimensional model. Similar models have been applied to explain the occurence of power-law event sizes in systems as diverse as earthquakes, front depinning and biological evolution.
+
+The original rice pile experiment measured the internal energy dissipation in a pile of rice confined between two glass plates. The energy of the pile was found by taking pictures of the pile from the side and calculating the potential energy from the distribution of mass in the pile. The experiment showed that for elongated grains of rice, the distribution of avalanche sizes were described by a power-law. However, for rounder grains the distribution was best described as a stretched exponential distribution with a characteristic size. It was speculated that the difference was due to differences in inertial effects in the two systems. However, the main conclusion was the self-organized criticality can be relevant to the description of granular systems, but it is not a universal behavior.
+
+The experiment was performed in several stages. During the first experimental period, pictures of the pile were taken with a video camera. However, it turned out that the spatial resolution and the stability of the video signal was not good enough to produce a reasonable scaling range for the measured energy. A second series of experiments were therefore performed with a \$100.000 CCD camera with a striking 2000x2000 spatial resolution with 12 bits of grayscale resolution was used. However, even with this camera, the system size was limited. In order to ascertain that very large piles did not behave significantly different, as have been claimed by several researchers, an experiment was performed on a 2.5m times 3m pile. The pile did not behave significantly different than the 80cm wide pile tested previously.
+
+
+%One of the first empirical tests of Bak’s sand pile model took place in 1992, in the physics department of the University of Oslo. The physicists confined piles of rice between glass plates and added grains one at a time, capturing the resulting avalanche dynamics on camera. They found that the piles of elongated grains of rice behaved much like Bak’s simplified model.
+%Most notably, the smaller avalanches were more frequent than the larger ones, following the expected power law distribution. That is, if there were 100 small avalanches involving only 10 grains during a given time frame, there would be 10 avalanches involving 100 grains in the same period, but only a single large avalanche involving 1,000 grains. (The same pattern had been observed in
 
 
 \section{The Experiment}
@@ -119,8 +154,9 @@ Most notably, the smaller avalanches were more frequent than the larger ones, fo
 
 
 \chapter{Theory}
+
+\section{SOC and the Power Law}
 \section{Physics of the Experimental System}
-\subsection{SOC and the power Law}
 \subsubsection{Effect of Drop Height}
 \subsubsection{Effect of Cohesion}
 \subsection{Angle of Repose}
@@ -239,6 +275,7 @@ This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
 
+\nocite{*}
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{thesis}
 %\bibliographystyle{plain}			% listed alphabetically but ordered numerically, including titles
