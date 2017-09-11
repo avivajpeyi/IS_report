@@ -5,35 +5,35 @@
 \contentsline {subsection}{\numberline {1.1.2}The Origins of SOC: Critical Points}{1}
 \contentsline {subsection}{\numberline {1.1.3}The Sandpile Cellular Automata}{2}
 \contentsline {subsection}{\numberline {1.1.4}Experimental Verification}{3}
-\contentsline {section}{\numberline {1.2}The Experiment}{5}
-\contentsline {section}{\numberline {1.3}Simulation}{5}
-\contentsline {subsection}{\numberline {1.3.1}Previous Work}{5}
-\contentsline {subsection}{\numberline {1.3.2}Speed Boosts with GPUs}{5}
-\contentsline {subsection}{\numberline {1.3.3}Unified Particle Physics and Position Based Dynamics}{5}
-\contentsline {section}{\numberline {1.4}Overview of Thesis}{5}
-\contentsline {chapter}{\numberline {2}Theory}{7}
-\contentsline {section}{\numberline {2.1}SOC and the Power Law}{7}
-\contentsline {section}{\numberline {2.2}Physics of the Experimental System}{7}
-\contentsline {subsubsection}{Effect of Drop Height}{7}
-\contentsline {subsubsection}{Effect of Cohesion}{7}
-\contentsline {subsection}{\numberline {2.2.1}Angle of Repose}{7}
-\contentsline {subsection}{\numberline {2.2.2}Cohesion between Beads}{7}
-\contentsline {section}{\numberline {2.3}How to take Advantage of GPUs}{7}
-\contentsline {subsection}{\numberline {2.3.1}GPUs traditional role in Computers}{7}
-\contentsline {subsection}{\numberline {2.3.2}Parallelising Code and Threading}{7}
-\contentsline {section}{\numberline {2.4}Algorithms Used}{7}
-\contentsline {subsection}{\numberline {2.4.1}Boundary Volume Hierarchy}{7}
-\contentsline {subsection}{\numberline {2.4.2}Position-Based Dynamics}{7}
-\contentsline {subsection}{\numberline {2.4.3}Unified-Particle Solving}{7}
-\contentsline {chapter}{\numberline {3}Results}{9}
-\contentsline {section}{\numberline {3.1}Comparing Simulation to Experiment}{9}
-\contentsline {section}{\numberline {3.2}Novel Results}{9}
-\contentsline {chapter}{\numberline {4}}{11}
-\contentsline {section}{\numberline {4.1}Math \& Citations}{11}
-\contentsline {section}{\numberline {4.2}Figures \& Tables}{11}
-\contentsline {chapter}{\numberline {5}Conclusions}{13}
-\contentsline {section}{\numberline {5.1}Stuff}{13}
+\contentsline {section}{\numberline {1.2}The Experiment}{4}
+\contentsline {section}{\numberline {1.3}Simulation}{4}
+\contentsline {subsection}{\numberline {1.3.1}Previous Work}{4}
+\contentsline {subsection}{\numberline {1.3.2}Speed Boosts with GPUs}{4}
+\contentsline {subsection}{\numberline {1.3.3}Unified Particle Physics and Position Based Dynamics}{4}
+\contentsline {section}{\numberline {1.4}Overview of Thesis}{4}
+\contentsline {chapter}{\numberline {2}Theory}{5}
+\contentsline {section}{\numberline {2.1}SOC and the Power Law}{5}
+\contentsline {section}{\numberline {2.2}Physics of the Experimental System}{5}
+\contentsline {subsubsection}{Effect of Drop Height}{5}
+\contentsline {subsubsection}{Effect of Cohesion}{5}
+\contentsline {subsection}{\numberline {2.2.1}Angle of Repose}{5}
+\contentsline {subsection}{\numberline {2.2.2}Cohesion between Beads}{5}
+\contentsline {section}{\numberline {2.3}How to take Advantage of GPUs}{5}
+\contentsline {subsection}{\numberline {2.3.1}GPUs traditional role in Computers}{5}
+\contentsline {subsection}{\numberline {2.3.2}Parallelising Code and Threading}{5}
+\contentsline {section}{\numberline {2.4}Algorithms Used}{5}
+\contentsline {subsection}{\numberline {2.4.1}Boundary Volume Hierarchy}{5}
+\contentsline {subsection}{\numberline {2.4.2}Position-Based Dynamics}{5}
+\contentsline {subsection}{\numberline {2.4.3}Unified-Particle Solving}{5}
+\contentsline {chapter}{\numberline {3}Results}{7}
+\contentsline {section}{\numberline {3.1}Comparing Simulation to Experiment}{7}
+\contentsline {section}{\numberline {3.2}Novel Results}{7}
+\contentsline {chapter}{\numberline {4}}{9}
+\contentsline {section}{\numberline {4.1}Math \& Citations}{9}
+\contentsline {section}{\numberline {4.2}Figures \& Tables}{9}
+\contentsline {chapter}{\numberline {5}Conclusions}{11}
+\contentsline {section}{\numberline {5.1}Stuff}{11}
 \contentsline {chapter}{Appendices}{}
-\contentsline {chapter}{\numberline {A}Extra Stuff}{15}
-\contentsline {chapter}{\numberline {B}Extra Stuffing}{17}
-\contentsline {chapter}{Bibliography}{19}
+\contentsline {chapter}{\numberline {A}Extra Stuff}{13}
+\contentsline {chapter}{\numberline {B}Extra Stuffing}{15}
+\contentsline {chapter}{Bibliography}{17}
