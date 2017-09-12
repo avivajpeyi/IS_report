@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{MindSandWeb}
+Jennifer Ouellette.
+\newblock {S}and {P}ile {M}odel of the {M}ind {G}rows in {P}opularity.
+\newblock
+  \url{www.scientificamerican.com/article/sand-pile-model-of-the-mind-grows-in-popularity/.},
+  2014.
+\newblock [Online; accessed 2017-September-11].
+
 \bibitem{IMGSandPile}
 John~C Mutter and Charles~HChenciner Langmuir.
 \newblock Introduction to {E}arth {S}ciences.
@@ -7,17 +15,62 @@ John~C Mutter and Charles~HChenciner Langmuir.
   2015.
 \newblock [Online; accessed 2017-September-11].
 
+\bibitem{OGperBak1987}
+TC~Per~Bak and Kurt Wiesenfeld.
+\newblock Self-organized criticality: and explanation of 1/f noise.
+\newblock {\em Phys. Rev. Let}, 59:381--384, 1987.
+
+\bibitem{PhaseTransitionInfo}
+David Chandler.
+\newblock Introduction to modern statistical mechanics.
+\newblock {\em Introduction to Modern Statistical Mechanics, by David Chandler,
+  pp. 288. Foreword by David Chandler. Oxford University Press, Sep 1987.
+  ISBN-10: 0195042778. ISBN-13: 9780195042771}, page 288, 1987.
+
 \bibitem{IMGCriticalPoint}
 Critical {P}oint {D}rying: uses of supercritical fluids.
 \newblock \url{http://www.appliedseparations.com/critical-point-drying.html},
   2017.
 \newblock [Online; accessed 2017-September-11].
 
-\bibitem{Chenciner2000}
-Alain Chenciner and Richard Montgomery.
-\newblock A remarkable periodic solution of the three-body problem in the case
-  of equal masses.
-\newblock {\em Annals of Mathematics}, 152:881--901, 2000.
+\bibitem{howNatureWorks}
+Per Bak.
+\newblock {\em How nature works: the science of self-organized criticality}.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{stockMarketProof}
+Dietrich Stauffer and Didier Sornette.
+\newblock Self-organized percolation model for stock market fluctuations.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  271(3):496--506, 1999.
+
+\bibitem{ForestFireProof}
+Weiguo Song, Fan Weicheng, Wang Binghong, and Zhou Jianjun.
+\newblock Self-organized criticality of forest fire in china.
+\newblock {\em Ecological Modelling}, 145(1):61--68, 2001.
+
+\bibitem{evolutionProof}
+Ricard~V Sol{\'e}, Susanna~C Manrubia, Michael Benton, Stuart Kauffman, and Per
+  Bak.
+\newblock Criticality and scaling in evolutionary ecology.
+\newblock {\em Trends in Ecology \& Evolution}, 14(4):156--160, 1999.
+
+\bibitem{EarthquakesProof}
+Zeev Olami, Hans Jacob~S Feder, and Kim Christensen.
+\newblock Self-organized criticality in a continuous, nonconservative cellular
+  automaton modeling earthquakes.
+\newblock {\em Physical Review Letters}, 68(8):1244, 1992.
+
+\bibitem{galaxyFormationProof}
+Markus Aschwanden.
+\newblock {\em Self-organized criticality in astrophysics: The statistics of
+  nonlinear processes in the universe}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{BrainProof}
+Lucilla de~Arcangelis, Carla Perrone-Capano, and Hans~J Herrmann.
+\newblock Self-organized criticality model for brain plasticity.
+\newblock {\em Physical review letters}, 96(2):028107, 2006.
 
 \bibitem{riceExpt}
 Vidar Frette, Kim Christensen, Anders Malthe-Sorenssen, Jens Feder, et~al.
@@ -46,15 +99,5 @@ Rachel~M Costello, KL~Cruz, Christie Egnatuk, DT~Jacobs, Matthew~C Krivos,
   Tim~Sir Louis, Rebecca~J Urban, and Hanna Wagner.
 \newblock Self-organized criticality in a bead pile.
 \newblock {\em Physical Review E}, 67(4):041304, 2003.
-
-\bibitem{OGperBak1987}
-TC~Per~Bak and Kurt Wiesenfeld.
-\newblock Self-organized criticality: and explanation of 1/f noise.
-\newblock {\em Phys. Rev. Let}, 59:381--384, 1987.
-
-\bibitem{howNatureWorks}
-Per Bak.
-\newblock {\em How nature works: the science of self-organized criticality}.
-\newblock Springer Science \& Business Media, 2013.
 
 \end{thebibliography}

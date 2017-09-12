@@ -70,8 +70,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Abstract}\addcontentsline{toc}{chapter}{Abstract}
-\indent Experiments with a granular bead pile have shown that the pile can model critical systems such as avalanches. In the experiments, a bead is dropped on the apex of the pile of beads. Eventually, one such bead causes several beads of the conical bead pile to avalanche. The experiments have studied the distribution of avalanches and how the distribution is affected by altering the bead type, bead cohesion, and bead drop height. In this study we present a computational simulation of the experiment. The simulation models each bead as independent particles with their own positions and velocities. The internal and external forces on each particle are accumulated to provide the new particle positions using Newton's second law of motion. The independence of each particle allows a natural way to express parallelism which we utilise by threading various processes of the particles to the graphical processing unit. This allows the simulation run in real-time while still having $60$k particles on the pile.\\
-\indent With this simulation we can learn new information from the system that may have been challenging to study with the actual experiment. For example, we can vary the shapes and numbers of the beads. With the simulation it is also possible to record the velocity of each particle on the surface and even inside the pile. 
+\indent Experiments with a granular bead pile have shown that the pile can model critical systems such as avalanches. In the experiments, a bead is dropped on the apex of the pile of beads. Eventually, one such bead causes several beads of the conical bead pile to avalanche. The experiments have studied the distribution of avalanches and how the distribution is affected by altering the bead type, bead cohesion, and bead drop height. In this study we present a computational simulation of the experiment.\\
+ \indent The simulation models each bead as independent particles with their own positions and velocities. The internal and external forces on each particle are accumulated to provide the new particle positions using Newton's second law of motion. As each particle is independent, we can use parallelism to thread various processes of the particles to the graphical processing unit. This allows the simulation run in real-time while still having $60$k particles on the pile.\\
+\indent With this simulation we can learn new information from the system that may have been challenging to study with the actual experiment. For example, we can vary the shapes and numbers of the beads. With the simulation it is also possible to record the velocity of each particle both on the surface and inside the pile. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\chapter*{Acknowledgments}\addcontentsline{toc}{chapter}{Acknowledgments}
@@ -95,43 +96,65 @@
 %discussion of everything in shallow... 
 \section{Per Bak and Sand in Brains}
 \subsection{Background}
-In 1999 a Danish Scientist by the name Per Bak explained the disordered electrical neural activity of a brain in an audacious way that left many neurologists puzzled.  He suggested that the brain's neural activity worked in a similar procedure as a sand pile which incur avalanches of varying sizes to maintain stability (instabilities paradoxically helping provide the system with stability). As more sand is added to the pile, more avalanches occur along the surface of the conical shape. Some of the avalanches are large and cause the sand to slip off the pile while some smaller ones lead to the sand grains sliding down a small distance before coming to a stop, as seen in Figure~\ref{fig:sandPileModel}. 
+In 1999 a Danish scientist by the name Per Bak explained the disordered electrical neural activity of a brain in an audacious way that left many neurologists puzzled \cite{MindSandWeb}.  He suggested that the brain's neural activity worked in a similar way as a sand pile upon which avalanches of varying sizes occur to maintain stability -- instabilities paradoxically helping provide the system with stability \cite{MindSandWeb}. As more sand is added to the pile, more avalanches occur along the surface of the conical shape. Some of the avalanches are large and cause the sand to slip off the pile. Smaller avalanches lead to the sand grains sliding down a short distance before coming to a stop, as seen in Figure~\ref{fig:sandPileModel}. 
 
 	\begin{figure*}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/sand_pile_model.png}
-	\caption[Per Bak's Theoretical Sand Pile Model]{\textit{Per Bak's Theoretical Sand Pile Model:} Sand is dropped regularly on a flat surface. The sand piles up in a conical shape and eventually reaches a critical point. At the critical point, the addition of even a single grain can lead to an avalanche. This image was modified from one seen in \cite{IMGSandPile}.}
+	\caption[Per Bak's Theoretical Sand Pile Model]{
+		\textit{Per Bak's Theoretical Sand Pile Model:} Sand is dropped regularly on a flat surface. The sand piles up in a conical shape and eventually reaches a critical point. At the critical point, the addition of even a single grain can lead to an avalanche. This image was modified from one seen in \cite{IMGSandPile}.}
 	\label{fig:sandPileModel}
 \end{figure*}
 
-Even with these unpredictable avalanches, the conical shape of the pile is maintained. Per Bak pointed out that although the individual avalanches were unpredictable in timing and size, the \textit{distribution} of the timings and sizes of several avalanches \textit{demonstrate a regularity}. He termed this phenomena of finding order in systems which appeared to be unpredictable with a term he coined - ``self-organised criticality'' (SOC).  He explained to the neurologists that perhaps brains, like sand piles, behave as self organised critical systems. This is because the ordered complexity in a brain which permits the ability to think arises spontaneously from what appears to us as disordered electrical activity of neurons .
+Even with these unpredictable avalanches, the conical shape of the pile is maintained. Per Bak pointed out that although the individual avalanches were unpredictable in timing and size, the \textit{distribution} of the timings and sizes of several avalanches \textit{demonstrate a regularity} \cite{OGperBak1987}. He coined the term ``self-organised criticality'' (SOC) as this phenomena of finding order in systems which appeared to be unpredictable.  He explained to the neurologists that perhaps brains, like sand piles, behave as self-organised critical systems \cite{MindSandWeb}. This is because the disordered electrical activity of neurons which permits us to think spontaneously arises from some ordered complexity \cite{MindSandWeb}. 
 
 
 \subsection{The Origins of SOC: Critical Points}
-In the 1980s, Bak began studying phase transitions in the hopes of better understanding how it is possible to find order in nature which is constituted by a disordered assortment of particles. Phase transitions, the process in which matter transforms from one phase to another, can involve a sudden change, like the magnetization of ferro-magnets, or can involve a gradual change, like ice transitioning to water. In any transition, there is a precise moment called the tipping or critical point at which the matter is halfway between each phase (see Figure~\ref{fig:critPoint} to look at a phase diagram of carbon dioxide with it's critical point marked).
+In the 1980s, Bak began studying phase transitions in the hopes of better understanding how it is possible to find order in nature which is made up of disordered particles \cite{MindSandWeb}. Phase transitions, the process by which matter transforms from one phase into another, can involve a sudden change (like the magnetization of ferro-magnets), or it can involve a gradual change (like ice transitioning to water) \cite{PhaseTransitionInfo}. In any transition, there is a precise moment called the tipping or critical point at which the matter is halfway between each phase (see Figure~\ref{fig:critPoint} to look at a phase diagram of carbon dioxide with it's critical point marked).
 
 \begin{figure*}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/critical_co2}
-	\caption[CO$^2$ phase diagram]{\textit{CO$^2$ phase diagram:} the critical point for CO$^2$ to transition from liquid/gas/super-fluid is marked on the plot. This image was taken from \cite{IMGCriticalPoint}. }
+	\includegraphics[width=0.5\textwidth]{Figures/Intro/SandPileFigs/critical_co2}
+	\caption[CO$^2$ phase diagram]{
+\textit{CO$^2$ phase diagram:} the critical point for CO$^2$ to transition from liquid/gas/super-fluid is marked on the plot. This image was taken from \cite{IMGCriticalPoint}. 
+}
 	\label{fig:critPoint}
 \end{figure*}
 
 
- In the case for most phase transitions, there are certain criteria that need to be met before matter can transition to another phase. For example - the local temperate and pressure must be within a specific range for ice to transition into water. Studying these transitions which can be reached only with the tuning of a parameter, lead Bak to question transitions which were able to occur spontaneously (transitions that occur with no fine tuning of parameters). He observed that in spontaneously transitioning systems, interactions of local elements of the system could spontaneously bring the system to a critical point -- a self oraganised critical point. He demonstrated the existence of SOC behavior with a simulation of a sandpile which he and his colleagues implemented using a cellular automata. 
+ In the case for most phase transitions, there are certain criteria that need to be met before matter can transition to another phase. For example - the local temperate and pressure must be within a specific range for ice to transition into water. Studying these transitions, which can be reached only with the tuning of parameters, led Bak to study transitions that require no fine tuning of parameters \cite{MindSandWeb}. He observed that in such transitioning systems, interactions of local elements of the system could spontaneously bring the system to a critical point -- a self-oraganised critical point. He demonstrated the existence of SOC behavior with a simulation of a sandpile which he and his colleagues implemented using a cellular automata \cite{OGperBak1987}. 
 \subsection{The Sandpile Cellular Automata}
-In the simulation, as sand is added to the pile, the local slopes on the pile increase (where the slopes are the cellular variables that evolve the cellular automata). If the slope is steep enough to overcome the the static friction holding the grains to the sides of the conical pile, grains slide down to neighboring positions. If the slope at the neighboring positions are also greater than the force required to hold the grain,  the grain can continue to slide down the side down the pile. Eventually, the avalanche of sliding grains comes to a halt when the grains settle in positions where they can remain. Figure~\ref{} shows a state of the sandpile produced from the group's cellular automata. 
+In the simulation presented in \cite{OGperBak1987}, as sand is added to the pile, the local slopes on the pile increase (where the slopes are the cellular variables that evolve the cellular automata). If the slope is steep enough to overcome the the static friction holding the grains to the sides of the conical pile, grains slide down to neighboring positions. If the slope at the neighboring positions are also greater than the force required to hold the grain,  the grain can continue to slide down the side of the pile.  Eventually, the avalanche of sliding grains comes to a halt when the grains settle in positions where they can remain. Figure~\ref{fig:perBak_cellular} shows a state of the sandpile produced from the group's cellular automata while Figure~\ref{fig:ConceptualSandpileModel}is the conceptual model of the sandpile that this simulation is made from. 
 \begin{figure*}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/perBak_cellular}
-	\caption[Snapshot of the sandpile cellular automata]{\textit{Snapshot of the sandpile cellular automata:} this snapshot was generated from a cellular automata of dimensions 100 by 100. The dark regions represent clusters that have been affected by the dropping of a single grain of sand at a point.  This image was taken from \cite{IMGCriticalPoint}. }
+	\includegraphics[width=0.4\textwidth]{Figures/Intro/SandPileFigs/perBak_cellular}
+	\caption[Snapshot of the sandpile cellular automata]{
+		\textit{Snapshot of the sandpile cellular automata:} this snapshot was generated from a cellular automata of dimensions 100 by 100. The dark regions represent clusters that have been affected by the dropping of a single grain of sand at a point.  This image was taken from \cite{OGperBak1987}.}
 	\label{fig:perBak_cellular}
 \end{figure*}
-Per Bak and his colleagues published the paper on the sand pile simulation and SOC in 1987. Soon afterward, Bak even published a book titled \textit{`How Nature Works'}. In the book, Bak extends the concept of SOC and demonstrates its presence in other complex systems ranging from financial markets,  coastline formation, evolution, earthquakes, galaxy distributions and even the brain. According to Bak, these systems hover between the fence separating order from disorder. Bak was able to study these only with simulations and so other scientists were still skeptical of his hypotheses about SOC. Some considered his work to be too simplistic to be able to capture the intricacies of realistic systems. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/Intro/SandPileFigs/theoreticalModel}
+	\caption[Conceptual model of Bak's Sandpile Simulation]{
+		\textit{Conceptual model of Bak's Sandpile Simulation:} When the pile is critical, then the addition of even a single grain can lead it to avalanche. This image was created using a similar style as in \cite{IMGSandPile}.}
+	\label{fig:perBak_cellular}
+\end{figure*}
+Per Bak and his colleagues published the paper on the sand pile simulation and SOC in 1987. Soon afterward, Bak even published a book titled \textit{`How Nature Works'} \cite{howNatureWorks}. In the book, Bak extends the concept of SOC and demonstrates its presence in other complex systems ranging from financial markets,  forest fires, evolution, earthquakes, galaxy distributions and even the brain \cite{howNatureWorks} (further work on how these systems demonstrate SOC behavious can be found here in order of the different systems mentioned \cite{stockMarketProof, ForestFireProof,evolutionProof,EarthquakesProof,galaxyFormationProof,BrainProof}). According to Bak, these systems lie on the fence separating order from disorder. Bak was able to study these complex systems only with simulations and so other scientists were still skeptical of his hypotheses about SOC \cite{MindSandWeb}. Some considered his work to be too simplistic and unable to capture the intricacies of realistic systems \cite{MindSandWeb}. 
 \subsection{Experimental Verification}
-A little afterwards, in 1992, the physics department of the University of Oslo was able to experimentally test Bak's sand pile model. 
+A little afterwards, in 1992, the physics department of the University of Oslo was able to experimentally test Bak's sand pile model \cite{riceExpt}. In their experiment, they confined grains of rice between two glass plates, as show in Figure~\ref{fig:riceModel}. They added grains till the pile reached a `quasi-stationary' state \cite{riceExpt}. At this stage, they began recording a video of the pile and then continued the grain dropping. When there was an avalanche, they used the video to compare images of the pile before and after the avalanche to calculate the size of the avalanche. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Figures/Intro/riceFigs/riceEvent}
+	\caption[Rice-pile Model]{
+\textit{Rice pile model:} the photograph on the left shows an image of an avalanche occurring. The image before and after the avalanche are compared as shown by the middle image. This is used to calculate the size of the avalanche. The various avalanches that have occured in this run are plotted on the right. The images in this figure which have been modified were taken from \cite{riceExpt}. 
+}
+	\label{fig:perBak_cellular}
+\end{figure*}
+
+They repeated the experiment with two forms of rice grains, elongated rice grains and short rice grains. On taking data for several days, they were able to study the distribution of avalanches for both the types of rice grains. They found that the elongated rice grain pile exhibited SOC while the short ones did not - demonstrating that SOC is not universal \cite{riceExpt}. 
+[To be completed]
 %
-%elf-organized criticality was originally coined by Bak and coworkers in 1987 as an explanation for how many slowly driven dissipative systems evolve into a critical state with no intrinsic length or time scale. The generic example is a naive, theoretical sand pile model. As grains of sand are added to a pile, the pile builds up, increasing the local slopes within the pile. If a local slopes exceeds a threshold value that depends on the maximum shear force a grain can sustain before sliding, the grain slides down to a neighboring position. The slope at that position may also exceed the critical value, and the avalanche continues until no more grains are moved. The distribution of energy dissipation events in this simple model is power-law distributed for a two-dimensional model. Similar models have been applied to explain the occurence of power-law event sizes in systems as diverse as earthquakes, front depinning and biological evolution.
+%The distribution of energy dissipation events in this simple model is power-law distributed for a two-dimensional model. Similar models have been applied to explain the occurence of power-law event sizes in systems as diverse as earthquakes, front depinning and biological evolution.
 %
 %The original rice pile experiment measured the internal energy dissipation in a pile of rice confined between two glass plates. The energy of the pile was found by taking pictures of the pile from the side and calculating the potential energy from the distribution of mass in the pile. The experiment showed that for elongated grains of rice, the distribution of avalanche sizes were described by a power-law. However, for rounder grains the distribution was best described as a stretched exponential distribution with a characteristic size. It was speculated that the difference was due to differences in inertial effects in the two systems. However, the main conclusion was the self-organized criticality can be relevant to the description of granular systems, but it is not a universal behavior.
 %
@@ -143,11 +166,16 @@ A little afterwards, in 1992, the physics department of the University of Oslo w
 
 
 \section{The Experiment}
+[Will discuss the Wooster bead pile experiment ]
 
 \section{Simulation}
 \subsection{Previous Work}
+[Ben Harris Code]
+[Unity Simulation]
 \subsection{Speed Boosts with GPUs}
+[Examples of how GPU may help]
 \subsection{Unified Particle Physics and Position Based Dynamics}
+[What this is and why this would help us]
 
 
 \section{Overview of Thesis}
@@ -173,70 +201,38 @@ A little afterwards, in 1992, the physics department of the University of Oslo w
 
 \chapter{Results}
 \section{Comparing Simulation to Experiment}
+Figure~\ref{fig:comparingData} contains plots of the data from the actual experiment on the left and the simulation on the right. There appears to be a similar trend present in the data sets, which is that there are periods of increasing mass and then a decrease in the mass (an avalanche). This is promising but we still need to acquire more data from the simulation before we can make statements about it.  Additionally, it is important to note that the initial parameters of both the experiment and the simulation that were used to obtain the data presented in the graphs are different. In the experiment, the drop height was set to be 2 cm. Additionally, the number of beads on the pile was about $1500$ beads. For the simulation, the drop height was 5 cm and there were $\sim60$K particles on the pile. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Figures/Results/comparingData/origComparision}
+	\caption[Comparing experiment and simuation data]{\textit{A comparison of data from the experiment and the simulation:} the plots on the right has been obtained from the experiment while the plots on the left have been obtained from the simulation. The plots on the top shows the mass/number of particles that constitutes the pile. The plots on the bottom shows the sizes of the avalanches that occur and the times at which the avalanches occur.}
+	\label{fig:comparingData}
+\end{figure*}
+
+Figure~\ref{fig:energy} contains a plot of another data set acquired from the simulation. The plot on the bottom is that of the average kinetic energy of the pile. It is interesting to note that the average kinetic energy of the pile peaks when avalanches occur. This is something which we expect to occur as during the avalanche, a lot of beads will be moving. 
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Figures/Results/energy/e1}
+	\caption[Average kinetic energy of simulated pile ]{\textit{Average kinetic energy of simulated pile:} the plot on the bottom shows the average kinetic energy of the pile. This can be used to determine when avalanches occur (average kinetic energy peaks when avalanches occur). This cannot be studied with the actual experiment. }
+	\label{fig:energy}
+\end{figure*}
+
+%energy
+
+\section{Testing the Simulation}
+\subsection{Does it qualitatively appear realistic}
+\subsection{Does it display a power law}
+\subsection{Does it deviate from the power law with height/cohesion}
+
 \section{Novel Results}
 
-\chapter{}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Math \& Citations}	% "&" is a special character
-Examples of inline math are $\alpha = \sqrt{\gamma^2 + \Gamma^2}$ and $\vec{v} = 7 \hat{x} - 5 \hat{y}$ and $\vec u \times \vec v$ and $c = (2.99 \pm 0.01) \times 10^8$ m/s. One example of block (display) math is
-%
-\begin{equation}
-	\int_0^1x^2 dx = \frac{1}{3},
-	\label{myIntegral}
-\end{equation}
-%
-and a second example is
-%
-\begin{equation}
-	\xi = \alpha \left( \frac{1}{ \omega_0^2 + \omega^2 } \right).
-	\label{signal}
-\end{equation}
-%
-Note how block math is punctuated like words in a sentence! The block math equations are automatically numbered. We can reference Eq. \ref{myIntegral} or Eq. \ref{signal} by inserting labels in the block, but then we must compile \LaTeX\ twice.
-
-We can readily cite articles \cite{Chenciner2000}  and books \cite{Gleick1987} and URLs \cite{Lindner2015} in our bibliography, but now we must compile \LaTeX, Bib\TeX,  \LaTeX, \LaTeX.
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Figures \& Tables}
-We can also include figures, but first we need to use package ``graphicx" under document class. We can reference Fig. \ref{SchematicDiagram} like equations. All figures should have captions.
-
-\begin{figure}[ht] % "ht" = here or top
-	\begin{center}
-		\includegraphics[width=0.8\linewidth]{Figures/ExampleFigure} % For Mac OS X PDFs (else append .eps)
-		\caption{Figure captions go on bottom.}
-		\label{SchematicDiagram}
-	\end{center}
-\end{figure}
-
-Finally, we can also include tables, such as Table \ref{demoTable}. Like figures, we can also \emph{attempt} to force their positions. 
-
-In the document class line, we can easily convert from ``preprint" one-column, double-spacing for rough drafts to ``twocolumn" single spacing for final drafts! 
-
-This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
-
-\begin{table}[h] % indenting is optional	
-	\caption{Table captions go on top.}
-	\label{demoTable}
-	\begin{center}
-		\begin{tabular}{cc} % "cc" = center each column
-			absicssa & ordinate\\
-			\hline
-			1.0 s & 5.6 m\\
-			2.0 s & 6.7 m\\
-			3.0 s & 9.9 m
-		\end{tabular}
-	\end{center}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusions}\label{Conclusions}
 
 \section{Stuff}
-This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
-
-This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
