@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 SEP 2017 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 SEP 2017 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,16 +256,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-] [3] [4
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3
 
 ]
-(./Thesis.toc [5])
+[4
+
+] (./Thesis.toc [5])
 \tf@toc=\write3
 \openout3 = `Thesis.toc'.
 
@@ -439,7 +442,7 @@ Here is how much of TeX's memory you used:
  6132 multiletter control sequences out of 15000+600000
  9582 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,26p,1054b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,26p,1056b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -451,7 +454,7 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Thesis.pdf (30 pages, 1555346 bytes).
+Output written on Thesis.pdf (30 pages, 1555546 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
